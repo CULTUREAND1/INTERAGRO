@@ -4,69 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoverCrop - Proyecto</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1, h2 { color: #4CAF50; }
-        section { margin-bottom: 20px; }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-
-    <h1>Proyecto RoverCrop</h1>
-    
-    <section id="fases" class="section-padding my-5">
-        <div class="container">
-            <h1 class="display-5 text-center my-4"><span class="display-4 text-success">F</span>ases del Proyecto</h1>
-            <ol>
-                <li>
-                    <h2>Fase 1</h2>
-                    <p>Objetivo general, objetivos específicos, problemática, justificación e impacto esperado.</p>
-                </li>
-                <li>
-                    <h2>Fase 2</h2>
-                    <p>Documentación detallada de los objetivos y su desarrollo.</p>
-                </li>
-                <li>
-                    <h2>Fase 3</h2>
-                    <p>Integración del documento IEEE830 para consulta directa desde la página web.</p>
-                </li>
-            </ol>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RoverCrop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fases del Proyecto
+                        </a>
+                        <ul class="dropdown-menu navbar-dark bg-dark">
+                            <li><a class="dropdown-item" href="fase-1-2.html">Fase 1 y 2</a></li>
+                            <li><a class="dropdown-item" href="fase-3.html">Fase 3</a></li>
+                            <li><a class="dropdown-item" href="fase-4.html">Fase 4</a></li>
+                            <li><a class="dropdown-item" href="fase-5.html">Fase 5</a></li>
+                            <li><a class="dropdown-item" href="fase-6.html">Fase 6</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- Fase 1 -->
-    <section id="fase-1">
-        <h2>Fase 1: Introducción al Proyecto</h2>
-        <h3>Objetivo General</h3>
-        <p>Establecer una plataforma digital que facilite la comunicación directa entre campesinos y compradores, eliminando intermediarios y permitiendo precios justos.</p>
-        
-        <h3>Objetivos Específicos</h3>
-        <ul>
-            <li>Facilitar la comercialización directa entre campesinos y consumidores.</li>
-            <li>Reducir el impacto de los intermediarios en los precios finales.</li>
-            <li>Incrementar los ingresos de los campesinos mediante precios justos.</li>
-        </ul>
-    </section>
-    
-    <!-- Fase 2 -->
-    <section id="fase-2">
-        <h2>Fase 2: Análisis y Justificación</h2>
-        <h3>Problemática</h3>
-        <p>Los campesinos enfrentan precios bajos debido a los intermediarios, lo que limita sus ingresos y oportunidades de crecimiento.</p>
-        
-        <h3>Justificación</h3>
-        <p>La plataforma permitirá a los campesinos vender sus productos directamente, aumentando sus ingresos y competitividad en el mercado.</p>
-        
-        <h3>Impacto Esperado</h3>
-        <p>Se espera mejorar las condiciones de vida de los campesinos al ofrecer un canal de venta más justo y competitivo.</p>
-    </section>
+    <div class="container mt-5">
+        <h1>Bienvenido a RoverCrop</h1>
+        <p>Seleccione una fase del proyecto para obtener más información.</p>
+    </div>
 
-    <!-- Fase 3 -->
-    <section id="fase-3">
-        <h2>Fase 3: Documento IEEE830</h2>
-        <p>Puedes revisar el documento IEEE830 a continuación:</p>
-        <embed src="ruta/al/documento/IEEE830.pdf" type="application/pdf" width="100%" height="600px" />
-    </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
