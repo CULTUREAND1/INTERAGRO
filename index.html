@@ -40,4 +40,18 @@
         <p>&copy; 2024 InterAgro. Todos los derechos reservados.</p>
     </footer>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const infoContent = document.querySelector('.info-content');
+        window.addEventListener('scroll', function() {
+            const sectionTop = infoContent.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            if(sectionTop < screenPosition) {
+                infoContent.classList.add('visible');
+            }
+        });
+    });
+</script>
+
 </html>
