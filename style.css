@@ -161,7 +161,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('imagenes\image.png'); /* Fondo de forma */
+    background-image: url(imagenes\image.png); /* Fondo de forma */
     background-repeat: no-repeat;
     background-size: cover;
 }
