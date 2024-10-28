@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,12 +14,35 @@
             <img src="imagenes/image.png" alt="InterAgro Logo" class="logo">
             <h1>InterAgro</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+            <!-- Botón para abrir el menú -->
+    <div class="menu-btn" onclick="toggleMenu()">☰ Menú</div>
+
+    <!-- Menú Lateral -->
+    <div class="menu-lateral" id="menu">
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="fase-1-2.html">fase-1-2</a></li>
+            <li><a href="fase-3.html">fase-3</a></li>
+            <li><a href="fase-4.html">fase-4</a></li>
+            <li><a href="fase-5.html">fase-5</a></li>
+            <li><a href="fase-6.html">fase-6</a></li>
+            <li><a href="contacto">contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <script>
+        // Función para mostrar/ocultar el menú
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var overlay = document.getElementById("overlay");
+            menu.classList.toggle("open");
+            overlay.classList.toggle("show");
+        }
+    </script>
     </header>
 
     <!-- Sección de Bienvenida -->
@@ -34,19 +56,11 @@
 
     <!-- Información del Proyecto -->
     <section class="project-info">
-        <div class="container mt-5">
-            <h2>Fase 1: Introducción al Proyecto</h2>
-            <h3>Objetivo General</h3>
-            <p>Establecer una plataforma digital que facilite la comunicación directa entre campesinos y compradores, eliminando intermediarios y permitiendo precios justos.</p>
-    
-            <h3>Objetivos Específicos</h3>
-            <ul>
-                <li>Facilitar la comercialización directa entre campesinos y consumidores.</li>
-                <li>Reducir el impacto de los intermediarios en los precios finales.</li>
-                <li>Incrementar los ingresos de los campesinos mediante precios justos.</li>
-            </ul>
+        <div class="info-content visible">
+            <img src="imagenes/image.png" alt="InterAgro Logo" class="project-logo">
+            <h2>InterAgro</h2>
+            <p>Comercializamos productos agrícolas mediante tecnología avanzada para asegurar la máxima eficiencia en producción y distribución.</p>
         </div>
-    
     </section>
     
     <!-- Pie de Página -->
@@ -54,4 +68,18 @@
         <p>&copy; 2024 InterAgro. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Script para animación al desplazarse -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const infoContent = document.querySelector('.info-content');
+            window.addEventListener('scroll', function() {
+                const sectionTop = infoContent.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                if (sectionTop < screenPosition) {
+                    infoContent.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
