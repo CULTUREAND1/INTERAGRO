@@ -1,3 +1,68 @@
+/* Estilos del menú lateral */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.menu-lateral.open {
+    right: 0;
+}
+
+/* Botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilo para el overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.show {
+    display: block;
+}
+
+/* Estilos del botón del menú */
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Opciones de menú */
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral li {
+    padding: 10px 0;
+}
+
+.menu-lateral a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
 header h1 {
     font-size: 2em;
     margin-bottom: 0.5em;
@@ -52,30 +117,24 @@ header h1 {
     font-size: 1.2em;
     color: #555;
 }
-
 /* Información del proyecto */
 .project-info {
     display: flex;
-    flex-direction: column; /* Ajuste para que el contenido se apile verticalmente */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 60px 5%;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Alinea el texto en el centro */
-    margin: 20px auto; /* Centra la sección en el contenedor */
+    text-align: center;
+    margin: 20px auto;
 }
 
 .info-content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    transition-delay: 0.2s;
-}
-
-.info-content.visible {
-    opacity: 1;
+    text-align: center;
+    opacity: 1; /* Forzado para que sea visible durante pruebas */
     transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .project-logo {
@@ -93,7 +152,7 @@ header h1 {
     font-size: 1.1em;
     max-width: 500px;
     color: #333;
-    margin: 0 auto; /* Centra el texto */
+    margin: 0 auto;
 }
 
 /* Pie de página */
@@ -109,7 +168,9 @@ footer p {
     font-size: 0.9em;
 }
 
-/* Responsive */
+
+        
+        /* Responsive */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -132,69 +193,3 @@ footer p {
         margin: 10px 0;
     }
 }
-
-        /* Estilos del menú lateral */
-        .menu-lateral {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 300px;
-            height: 100%;
-            background-color: white;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            transition: right 0.3s ease;
-            z-index: 1000;
-        }
-
-        .menu-lateral.open {
-            right: 0;
-        }
-
-        /* Botón de cierre */
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        /* Estilo para el overlay */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 500;
-            transition: opacity 0.3s ease;
-        }
-
-        .overlay.show {
-            display: block;
-        }
-
-        /* Estilos del botón del menú */
-        .menu-btn {
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        /* Opciones de menú */
-        .menu-lateral ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .menu-lateral li {
-            padding: 10px 0;
-        }
-
-        .menu-lateral a {
-            color: black;
-            text-decoration: none;
-            font-size: 18px;
-        }
