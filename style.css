@@ -122,15 +122,17 @@ nav ul li a:hover {
 /* Información del proyecto */
 .project-info {
     display: flex;
+    flex-direction: column; /* Ajuste para que el contenido se apile verticalmente */
     align-items: center;
     justify-content: center;
     padding: 60px 5%;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alinea el texto en el centro */
+    margin: 20px auto; /* Centra la sección en el contenedor */
 }
 
 .info-content {
-    text-align: center;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -157,6 +159,7 @@ nav ul li a:hover {
     font-size: 1.1em;
     max-width: 500px;
     color: #333;
+    margin: 0 auto; /* Centra el texto */
 }
 
 /* Pie de página */
@@ -195,3 +198,4 @@ footer p {
         margin: 10px 0;
     }
 }
+
