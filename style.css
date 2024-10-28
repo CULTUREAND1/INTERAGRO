@@ -117,24 +117,30 @@ header h1 {
     font-size: 1.2em;
     color: #555;
 }
+
 /* Información del proyecto */
 .project-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Ajuste para que el contenido se apile verticalmente */
     align-items: center;
     justify-content: center;
     padding: 60px 5%;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin: 20px auto;
+    text-align: center; /* Alinea el texto en el centro */
+    margin: 20px auto; /* Centra la sección en el contenedor */
 }
 
 .info-content {
-    text-align: center;
-    opacity: 1; /* Forzado para que sea visible durante pruebas */
-    transform: translateY(0);
+    opacity: 0;
+    transform: translateY(20px);
     transition: opacity 0.8s ease, transform 0.8s ease;
+    transition-delay: 0.2s;
+}
+
+.info-content.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .project-logo {
@@ -152,7 +158,7 @@ header h1 {
     font-size: 1.1em;
     max-width: 500px;
     color: #333;
-    margin: 0 auto;
+    margin: 0 auto; /* Centra el texto */
 }
 
 /* Pie de página */
@@ -167,7 +173,6 @@ footer {
 footer p {
     font-size: 0.9em;
 }
-
 
         
         /* Responsive */
