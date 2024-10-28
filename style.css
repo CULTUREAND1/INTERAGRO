@@ -155,27 +155,44 @@ nav ul li a:hover {
 
 /* Sección hero */
 .hero {
-    background-color: #f7f7f7;
+    background: linear-gradient(to bottom, #e8f5e9, #ffffff), url('imagenes/image.png'); /* Fondo degradado + imagen */
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 60px 5%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url(imagenes\image.png); /* Fondo de forma */
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .hero-content h2 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-content p {
     max-width: 600px;
     font-size: 1.2em;
     color: #555;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #66bb6a;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4caf50;
 }
 
 /* Información del proyecto */
@@ -185,6 +202,7 @@ nav ul li a:hover {
     justify-content: center;
     padding: 60px 5%;
     background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 .info-content {
@@ -199,6 +217,7 @@ nav ul li a:hover {
 .project-info h2 {
     font-size: 2em;
     color: #80c25a;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra en el texto */
 }
 
 .project-info p {
@@ -209,7 +228,7 @@ nav ul li a:hover {
 
 /* Pie de página */
 footer {
-    background-color: #1d1d1d;
+    background: linear-gradient(to right, #1d1d1d, #333);
     color: #fff;
     text-align: center;
     padding: 15px;
@@ -217,6 +236,18 @@ footer {
 
 footer p {
     font-size: 0.9em;
+}
+
+/* Animación de entrada al desplazarse */
+.info-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.info-content.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Responsive */
@@ -234,4 +265,3 @@ footer p {
         margin: 10px 0;
     }
 }
-
