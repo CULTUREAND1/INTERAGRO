@@ -155,7 +155,7 @@ nav ul li a:hover {
 
 /* Sección hero */
 .hero {
-    background: linear-gradient(to bottom, #e5f1e6, #c07878), url(imagenes/image.png); /* Fondo degradado + imagen */
+    background: linear-gradient(to bottom, #e5f1e6, #87cf87), url(imagenes/image.png); /* Fondo degradado + imagen */
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 5%;
