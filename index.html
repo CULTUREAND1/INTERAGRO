@@ -14,36 +14,26 @@
             <img src="imagenes/image.png" alt="InterAgro Logo" class="logo">
             <h1>InterAgro</h1>
         </div>
-            <!-- Botón para abrir el menú -->
-    <div class="menu-btn" onclick="toggleMenu()">☰ Menú</div>
+        <!-- Botón para abrir el menú -->
+        <div class="menu-btn" onclick="toggleMenu()">☰ Menú</div>
+    </header>
 
     <!-- Menú Lateral -->
     <div class="menu-lateral" id="menu">
         <div class="close-btn" onclick="toggleMenu()">×</div>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="fase-1-2.html">fase-1-2</a></li>
-            <li><a href="fase-3.html">fase-3</a></li>
-            <li><a href="fase-4.html">fase-4</a></li>
-            <li><a href="fase-5.html">fase-5</a></li>
-            <li><a href="fase-6.html">fase-6</a></li>
-            <li><a href="contacto">contacto</a></li>s
+            <li><a href="fase-1-2.html">Fase 1-2</a></li>
+            <li><a href="fase-3.html">Fase 3</a></li>
+            <li><a href="fase-4.html">Fase 4</a></li>
+            <li><a href="fase-5.html">Fase 5</a></li>
+            <li><a href="fase-6.html">Fase 6</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </div>
 
     <!-- Overlay -->
     <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
-
-    <script>
-        // Función para mostrar/ocultar el menú
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            var overlay = document.getElementById("overlay");
-            menu.classList.toggle("open");
-            overlay.classList.toggle("show");
-        }
-    </script>
-    </header>
 
     <!-- Sección de Bienvenida -->
     <section class="hero">
@@ -66,6 +56,16 @@
     <footer>
         <p>&copy; 2024 InterAgro. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        // Función para mostrar/ocultar el menú
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var overlay = document.getElementById("overlay");
+            menu.classList.toggle("open");
+            overlay.classList.toggle("show");
+        }
+    </script>
 
 </body>
 </html>
