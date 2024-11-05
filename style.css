@@ -221,7 +221,7 @@ body, html {
 }
 
 .parallax {
-    background-image: url('https://www.revistacompensar.com/wp-content/uploads/2017/08/shutterstock_298710401.jpg'); /* Asegúrate de poner la ruta correcta de tu imagen */
+    background-image: url('https://cdn.bioguia.com/embed/253aec8e2ccc20a5ea34b3965e02565af3c31588271573/familia-cultivos-atardecer.jpg'); /* Asegúrate de poner la ruta correcta de tu imagen */
     height: 100vh;
     background-attachment: fixed;
     background-position: center;

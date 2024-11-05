@@ -30,6 +30,16 @@
             <li><a href="fase-6.html">Fase 6</a></li>
         </ul>
     </div>
+    
+    <script>
+        // Función para mostrar/ocultar el menú
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var overlay = document.getElementById("overlay");
+            menu.classList.toggle("open");
+            overlay.classList.toggle("show");
+        }
+    </script>
 
     <!-- Overlay -->
     <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
@@ -53,16 +63,6 @@
     <footer>
         <p>&copy; 2024 InterAgro. Todos los derechos reservados.</p>
     </footer>
-
-    <script>
-        // Función para mostrar/ocultar el menú
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            var overlay = document.getElementById("overlay");
-            menu.classList.toggle("open");
-            overlay.classList.toggle("show");
-        }
-    </script>
 </body>
 
  
