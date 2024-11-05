@@ -220,7 +220,7 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.hero {
+.parallax {
     background-image: url('https://www.revistacompensar.com/wp-content/uploads/2017/08/shutterstock_298710401.jpg'); /* Asegúrate de poner la ruta correcta de tu imagen */
     height: 100vh;
     background-attachment: fixed;
