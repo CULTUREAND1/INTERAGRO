@@ -62,15 +62,6 @@ body {
     right: 0;
 }
 
-/* Sección Parallax */
-.parallax {
-    background-image: url('https://www.revistacompensar.com/wp-content/uploads/2017/08/shutterstock_298710401.jpg');
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /* Botón de cierre */
 .close-btn {
@@ -229,7 +220,7 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.parallax {
+.hero {
     background-image: url('https://www.revistacompensar.com/wp-content/uploads/2017/08/shutterstock_298710401.jpg'); /* Asegúrate de poner la ruta correcta de tu imagen */
     height: 100vh;
     background-attachment: fixed;
@@ -238,6 +229,7 @@ body, html {
     background-size: cover;
     position: relative;
 }
+
 
 .content {
     position: absolute;
