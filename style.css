@@ -275,3 +275,44 @@ body, html {
     text-align: center;
 }
 
+/* Estilos para la sección de Integrantes */
+.team {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+}
+
+.member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.member-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.member-role {
+    font-size: 14px;
+    color: #777;
+}
+
+
