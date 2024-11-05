@@ -178,16 +178,15 @@ body {
 }
 
 /* Pie de página */
-footer {
-    background: linear-gradient(to right, #1d1d1d, #333);
+.footer {
+    background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 15px;
-    border-top: 4px solid #206a36;
+    padding: 10px 0;
 }
 
-footer p {
-    font-size: 0.9em;
+.footer p {
+    margin: 0;
 }
 
 /* Responsive */
