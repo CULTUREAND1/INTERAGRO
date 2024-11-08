@@ -181,50 +181,94 @@ body {
 footer {
     background-color: #000;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
+    font-family: 'Arial', sans-serif;
 }
 
 .footer-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.footer-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer-logo img {
+    max-width: 150px;
     margin-bottom: 20px;
 }
 
-.footer-logo img {
-    max-width: 150px;
-    margin-bottom: 10px;
-}
-
-.footer-links,
-.footer-social {
+.footer-columns {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.footer-links a,
-.footer-social a {
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column a {
+    display: block;
     color: #fff;
     text-decoration: none;
-    margin: 5px 0;
+    margin-bottom: 10px;
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover,
+.footer-column a:hover {
+    color: #3f9c35;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
 .footer-social a:hover {
     color: #3f9c35;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
 }
 
 /* Media Queries para dispositivos móviles */
