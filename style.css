@@ -56,20 +56,17 @@ body, html {
 }
 
 
-/* Contenedor con fondo de ondas suave */
+/* Contenedor de transición con múltiples curvas */
 .curve-divider {
     width: 100%;
-    height: 150px;
-    background: radial-gradient(circle at 10% 40%, transparent 20%, #000 20%) 0 0 / 15% 100%,
-                radial-gradient(circle at 30% 40%, transparent 20%, #000 20%) 20% 0 / 15% 100%,
-                radial-gradient(circle at 50% 40%, transparent 20%, #000 20%) 40% 0 / 15% 100%,
-                radial-gradient(circle at 70% 40%, transparent 20%, #000 20%) 60% 0 / 15% 100%,
-                radial-gradient(circle at 90% 40%, transparent 20%, #000 20%) 80% 0 / 15% 100%;
-    background-repeat: repeat-x;
+    height: 150px; /* Ajusta la altura según la profundidad de las curvas */
+    background-color: #000; /* Color de fondo de la curva */
+    clip-path: polygon(0% 50%, 10% 60%, 20% 50%, 30% 60%, 40% 50%, 50% 60%, 60% 50%, 70% 60%, 80% 50%, 90% 60%, 100% 50%, 100% 100%, 0% 100%);
     position: relative;
-    top: -5px;
+    top: -5px; /* Ajuste para posicionamiento */
     z-index: 999;
 }
+
 
 
 /* Botón del menú */
