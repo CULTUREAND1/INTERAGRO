@@ -17,13 +17,6 @@ body {
 
 /* Estilo para el header con borde curvo */
 .header {
-    background-color: #222; /* Cambia esto por el color que prefieras */
-    color: #fff;
-    padding: 20px;
-    clip-path: ellipse(150% 100% at 50% 0%);
-    text-align: center;
-}
-.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +28,9 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    clip-path: ellipse(150% 100% at 50% 0%); /* Borde curvo agregado */
 }
+
 .header-content {
     display: flex;
     align-items: center;
@@ -51,6 +46,7 @@ body {
     font-weight: bold;
     margin: 0;
 }
+
 /* Botón del menú */
 .menu-btn {
     font-size: 24px;
