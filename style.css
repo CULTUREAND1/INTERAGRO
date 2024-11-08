@@ -29,15 +29,13 @@ body, html {
     padding: 20px;
     background-color: #000;
     color: #fff;
-    position: relative;
+    position: fixed;
     width: 100%;
-    top: -5px; /* Ajuste para posicionamiento */
+    top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-bottom-left-radius: 100% 50px;
     border-bottom-right-radius: 100% 50px;
-    height: 150px; /* Ajusta la altura según la profundidad de las curvas */
-    clip-path: polygon(0% 50%, 10% 60%, 20% 50%, 30% 60%, 40% 50%, 50% 60%, 60% 50%, 70% 60%, 80% 50%, 90% 60%, 100% 50%, 100% 100%, 0% 100%);
 }
 
 
@@ -68,8 +66,6 @@ body, html {
     top: -5px; /* Ajuste para posicionamiento */
     z-index: 999;
 }
-
-
 
 /* Botón del menú */
 .menu-btn {
