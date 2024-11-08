@@ -16,7 +16,7 @@ body {
 /* Encabezado */
 
 /* Estilo para el header con borde curvo */
-header {
+.header {
     background-color: #222; /* Cambia esto por el color que prefieras */
     color: #fff;
     padding: 20px;
