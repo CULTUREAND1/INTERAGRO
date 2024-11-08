@@ -22,12 +22,11 @@ body, html {
 
 /* Encabezado */
 
-/* Estilo para el header con borde curvo */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
     background-color: #000;
     color: #fff;
     position: fixed;
@@ -35,9 +34,9 @@ body, html {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-bottom-left-radius: 50% 20px; /* Ajusta estos valores para modificar la curva */
-    border-bottom-right-radius: 50% 20px;
+    clip-path: ellipse(200% 50% at 50% 0%); /* Ajuste para una curva más pronunciada */
 }
+
 
 .header-content {
     display: flex;
