@@ -67,6 +67,20 @@ body, html {
     z-index: 999;
 }
 
+/* Estilos para el contenedor con SVG de curvas */
+.curve-divider {
+    width: 100%;
+    overflow: hidden; /* Oculta cualquier contenido fuera del área visible */
+    line-height: 0; /* Elimina el espacio en blanco alrededor del SVG */
+}
+
+.curve-divider svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
 
 
 /* Botón del menú */
