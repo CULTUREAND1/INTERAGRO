@@ -398,7 +398,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
     padding: 20px;
-    width: 250px;
+    width: 270px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -408,8 +408,8 @@ body {
 }
 
 .member-photo {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
@@ -441,5 +441,6 @@ body {
         align-items: center;
     }
 }
+
 
 
