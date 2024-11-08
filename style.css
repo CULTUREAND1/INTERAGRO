@@ -98,6 +98,17 @@ body {
     display: block;
 }
 
+.overlay {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
 /* Opciones del menú */
 .menu-lateral ul {
     list-style: none;
