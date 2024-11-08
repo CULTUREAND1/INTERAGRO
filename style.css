@@ -34,8 +34,10 @@ body, html {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    clip-path: ellipse(200% 50% at 50% 0%); /* Ajuste para una curva más pronunciada */
+    border-bottom-left-radius: 100% 50px;
+    border-bottom-right-radius: 100% 50px;
 }
+
 
 
 .header-content {
