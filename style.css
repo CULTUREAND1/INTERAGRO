@@ -330,6 +330,60 @@ footer {
     }
 
 }
+/* Fondo parallax */
+.parallax {
+    background-image: url('https://cdn.bioguia.com/embed/253aec8e2ccc20a5ea34b3965e02565af3c31588271573/familia-cultivos-atardecer.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+/* Contenido de bienvenida */
+.content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    border-radius: 12px;
+    padding: 30px 40px;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Título y texto */
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Botón estilizado */
+.content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.content a:hover {
+    background-color: #0056b3;
+}
 
 
 /* Estilos para la sección de Integrantes */
