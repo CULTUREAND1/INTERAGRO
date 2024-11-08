@@ -29,13 +29,15 @@ body, html {
     padding: 20px;
     background-color: #000;
     color: #fff;
-    position: fixed;
+    position: relative;
     width: 100%;
-    top: 0;
+    top: -5px; /* Ajuste para posicionamiento */
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-bottom-left-radius: 100% 50px;
     border-bottom-right-radius: 100% 50px;
+    height: 150px; /* Ajusta la altura según la profundidad de las curvas */
+    clip-path: polygon(0% 50%, 10% 60%, 20% 50%, 30% 60%, 40% 50%, 50% 60%, 60% 50%, 70% 60%, 80% 50%, 90% 60%, 100% 50%, 100% 100%, 0% 100%);
 }
 
 
