@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #004d00;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#participantes .integrantes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#participantes .integrante {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+}
+
+#participantes .integrante img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#objetivos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#objetivos .objetivo-general,
+#objetivos .objetivos-especificos {
+    width: 45%;
+    margin: 10px;
+}
+
+#objetivos img {
+    width: 100px;
+    height: 100px;
+}
+
+#documento .documento-visualizacion {
+    text-align: center;
+}
+
+#documento iframe {
+    border: none;
+    margin: 20px 0;
+}
+
+#publicidad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#publicidad img {
+    width: 300px;
+    height: auto;
+}
+
+#publicidad .publicidad-texto {
+    text-align: left;
+    padding: 20px;
+}
+
+#publicidad button {
+    background-color: #004d00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#publicidad button:hover {
+    background-color: #003300;
+}
