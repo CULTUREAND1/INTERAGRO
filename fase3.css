@@ -191,7 +191,7 @@ section {
 }
 
 #documento {
-    background-color: #b31b1b;
+    background-color: rgba(135, 207, 135, 0.9);
     color: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -201,7 +201,7 @@ section {
     text-align: center;
     margin: 0;
     padding: 10px;
-    background-color: #7f0e0e;
+    background-color: rgba(135, 207, 135, 0.9);
 }
 
 .documento-visualizacion {
