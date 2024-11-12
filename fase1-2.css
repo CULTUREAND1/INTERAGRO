@@ -1,3 +1,138 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom-left-radius: 100% 50px;
+    border-bottom-right-radius: 100% 50px;
+}
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* Contenedor de transición con múltiples curvas */
+.curve-divider {
+    width: 100%;
+    height: 150px; /* Ajusta la altura según la profundidad de las curvas */
+    background: linear-gradient(to bottom, rgba(229, 241, 230, 0.9), rgba(135, 207, 135, 0.9)), url(https://th.bing.com/th/id/R.401c166b501c2be5efd1c6f988857dcc?rik=mPH1Ajf2zyUBYw&pid=ImgRaw&r=0);
+    clip-path: polygon(0% 50%, 10% 60%, 20% 50%, 30% 60%, 40% 50%, 50% 60%, 60% 50%, 70% 60%, 80% 50%, 90% 60%, 100% 50%, 100% 100%, 0% 100%);
+    position: relative;
+    top: -5px; /* Ajuste para posicionamiento */
+    z-index: 999;
+}
+
+/* Botón del menú */
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menú lateral */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1001; /* Ajustado para que esté encima del header */
+}
+
+.menu-lateral.open {
+    right: 0;
+}
+
+/* Botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.show {
+    display: block;
+}
+
+/* Opciones del menú */
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral li {
+    padding: 10px 0;
+}
+
+.menu-lateral a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,27 +155,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#participantes .integrantes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#participantes .integrante {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 10px;
-    width: 200px;
-}
-
-#participantes .integrante img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
 
 #objetivos {
     display: flex;
@@ -95,4 +209,107 @@ section {
 
 #publicidad button:hover {
     background-color: #003300;
+}
+/* Pie de página */
+
+/* Estilo para el footer con borde curvo */
+footer {
+    background-color: #222; /* Cambia esto por el color que prefieras */
+    color: #fff;
+    padding: 20px;
+    clip-path: ellipse(150% 100% at 50% 100%);
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #3f9c35;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #3f9c35;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
 }
