@@ -272,7 +272,7 @@ section {
 }
 
 #documento {
-    background-color: #b31b1b;
+    background-color: rgba(135, 207, 135, 0.9);
     color: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -282,7 +282,7 @@ section {
     text-align: center;
     margin: 0;
     padding: 10px;
-    background-color: #7f0e0e;
+    background-color: rgba(135, 207, 135, 0.9);
 }
 
 .documento-carrusel {
@@ -312,7 +312,7 @@ section {
 
 .documento-info button {
     background-color: #fff;
-    color: #b31b1b;
+    color: rgba(135, 207, 135, 0.9);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
