@@ -3,48 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InterAgro</title>
+    <title>InterAgro - Proyecto</title>
     <link rel="stylesheet" href="fase1-2.css">
 </head>
 <body>
-    <header>
-        <h1>InterAgro</h1>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="header-content">
+            <img src="imagenes/IMG-20231031-WA0034_055408.jpg" alt="InterAgro Logo" class="logo">
+            <h1 class="site-title">InterAgro</h1>
+        </div>
+        <!-- Botón para abrir el menú -->
+        <div class="menu-btn" onclick="toggleMenu()">☰ Menú</div>
     </header>
 
-    <section id="objetivos">
-        <h2>Objetivos</h2>
-        <div class="objetivo-general">
-            <img src="imagenes/image.png" alt="Objetivo General">
-            <h3>Objetivo General</h3>
-            <p>Diseñar un programa que simule el comportamiento de un Rover agricultor...</p>
-        </div>
-        <div class="objetivos-especificos">
-            <h3>Objetivos Específicos</h3>
-            <ul>
-                <li>Identificar proyectos previos para la construcción del estado del arte...</li>
-                <li>Comprender distintas herramientas de software para la creación y diseño del proyecto...</li>
-                <li>Establecer el modelo del simulador por medio de bases de datos y lenguajes de programación...</li>
-            </ul>
-        </div>
-    </section>
+    <!-- Menú Lateral -->
+    <div class="menu-lateral" id="menu">
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="fase-1-2.html">Fase 1-2</a></li>
+            <li><a href="fase-3.html">Fase 3</a></li>
+            <li><a href="fase-4.html">Fase 4</a></li>
+            <li><a href="fase-5.html">Fase 5</a></li>
+            <li><a href="fase-6.html">Fase 6</a></li>
+        </ul>
+    </div>
 
-    <section id="documento">
-        <h2>Documento IEEE 830</h2>
-        <div class="documento-visualizacion">
-            <iframe src="documentos/IEE 830 INTERAGRO (1).pdf" width="600" height="400"></iframe>
-            <p>El documento IEEE 830 es una especificación de requisitos...</p>
-        </div>
-    </section>
+    <script>
+        // Función para mostrar/ocultar el menú
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var overlay = document.getElementById("overlay");
+            menu.classList.toggle("open");
+            overlay.classList.toggle("show");
+        }
+    </script>
 
-    <section id="publicidad">
-        <div class="publicidad">
-            <img src="imagenes/image.png" alt="Coca-Cola XMAS">
-            <div class="publicidad-texto">
-                <h3>Coca-Cola XMAS</h3>
-                <p>¡Llena tu espíritu navideño de entusiasmo!...</p>
-                <button>Conocer más</button>
+
+        <section id="objetivos">
+            <h2>Objetivos</h2>
+            <div class="objetivo-general">
+                <img src="imagenes/image.png" alt="Objetivo General">
+                <h3>Objetivo General</h3>
+                <p>Diseñar un programa que simule el comportamiento de un Rover agricultor...</p>
+            </div>
+            <div class="objetivos-especificos">
+                <h3>Objetivos Específicos</h3>
+                <ul>
+                    <li>Identificar proyectos previos para la construcción del estado del arte...</li>
+                    <li>Comprender distintas herramientas de software para la creación y diseño del proyecto...</li>
+                    <li>Establecer el modelo del simulador por medio de bases de datos y lenguajes de programación...</li>
+                </ul>
+            </div>
+        </section>
+    
+
+
+
+
+        <!-- Contenedor con borde curvo -->
+<div class="curve-divider"></div>
+
+    <!-- Contenedor con borde curvo -->
+    <div class="curve-divider"></div>
+
+
+<!-- Pie de Página -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="imagenes/logo-footer.png" alt="InterAgro Logo">
+        </div>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Sobre Nosotros</h3>
+                <a href="index.html">Inicio</a>
+                <a href="fase-1-2.html">Fase 1-2</a>
+                <a href="fase-3.html">Fase 3</a>
+                <a href="fase-4.html">Fase 4</a>
+                <a href="fase-5.html">Fase 5</a>
+                <a href="fase-6.html">Fase 6</a>
+            </div>
+            <div class="footer-column">
+                <h3>¿Necesitas Ayuda?</h3>
+                <a href="sitemap.html">Mapa del Sitio</a>
+                <a href="contact.html">Contáctanos</a>
+            </div>
+            <div class="footer-column">
+                <h3>Información Legal</h3>
+                <a href="terms.html">Términos de Uso</a>
+                <a href="privacy.html">Política de Privacidad</a>
+                <a href="cookies.html">Configuración de Cookies</a>
+                <a href="cookie-info.html">Información y Uso de Cookies</a>
+                <a href="conditions.html">Términos y Condiciones</a>
             </div>
         </div>
-    </section>
+        <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 InterAgro. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
 </body>
-</html>
