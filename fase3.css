@@ -247,6 +247,104 @@ section {
 
 
 
+/*prueba*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #004d00;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#documento {
+    background-color: #b31b1b;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#documento h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #7f0e0e;
+}
+
+.documento-carrusel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.documento-visualizacion {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.documento-visualizacion iframe {
+    border: none;
+    margin-right: 20px;
+}
+
+.documento-info {
+    max-width: 600px;
+}
+
+.documento-info h3 {
+    margin-top: 0;
+}
+
+.documento-info button {
+    background-color: #fff;
+    color: #b31b1b;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.documento-info button:hover {
+    background-color: #f5f5f5;
+}
+
+button.prev, button.next {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+
+
 
 
 

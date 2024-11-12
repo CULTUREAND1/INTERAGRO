@@ -58,6 +58,58 @@
                 </ul>
             </div>
         </section>
+        <script>
+            let documentoIndex = 0;
+
+const documentos = [
+    {
+        src: "documentos/IEE_830_INTERAGRO_1.pdf",
+        titulo: "Documento IEEE 830 - 1",
+        descripcion: "El documento IEEE 830 es una especificación de requisitos...",
+        link: "documentos/IEE_830_INTERAGRO_1.pdf"
+    },
+    {
+        src: "documentos/IEE_830_INTERAGRO_2.pdf",
+        titulo: "Documento IEEE 830 - 2",
+        descripcion: "El documento IEEE 830 es una especificación de requisitos para sistemas...",
+        link: "documentos/IEE_830_INTERAGRO_2.pdf"
+    },
+    {
+        src: "documentos/IEE_830_INTERAGRO_3.pdf",
+        titulo: "Documento IEEE 830 - 3",
+        descripcion: "El documento IEEE 830 es utilizado para definir las características...",
+        link: "documentos/IEE_830_INTERAGRO_3.pdf"
+    }
+];
+
+function mostrarDocumento(index) {
+    const iframe = document.getElementById("documento-iframe");
+    const titulo = document.getElementById("documento-titulo");
+    const descripcion = document.getElementById("documento-descripcion");
+    const verDocumento = document.getElementById("ver-documento");
+
+    iframe.src = documentos[index].src;
+    titulo.textContent = documentos[index].titulo;
+    descripcion.textContent = documentos[index].descripcion;
+    verDocumento.onclick = () => window.open(documentos[index].link, "_blank");
+}
+
+function moverCarrusel(direccion) {
+    documentoIndex += direccion;
+
+    if (documentoIndex < 0) {
+        documentoIndex = documentos.length - 1;
+    } else if (documentoIndex >= documentos.length) {
+        documentoIndex = 0;
+    }
+
+    mostrarDocumento(documentoIndex);
+}
+
+// Inicializar el primer documento
+mostrarDocumento(documentoIndex);
+
+        </script>
     
 
 
