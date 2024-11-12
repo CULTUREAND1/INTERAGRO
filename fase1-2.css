@@ -164,54 +164,114 @@ section {
 
 
 
-
-/* Imagen en Objetivo General */
-.objetivo-general img {
-    width: 100px;
-    height: auto;
-    margin-right: 1rem;
-    border-radius: 50%;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+h2, h3 {
+    color: #005f73;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Sección Objetivos */
+#objetivos {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Objetivo General */
 .objetivo-general {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #e8f4f8;
+    border-radius: 8px;
+    border-left: 5px solid #005f73;
+}
+
+.objetivo-general img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .objetivo-general h3 {
-    margin-top: 0;
     color: #005f73;
-}
-
-.objetivo-general p {
+    font-size: 1.3rem;
     margin: 0;
 }
 
-/* Estilo para la lista de Objetivos Específicos */
+.objetivo-general p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Objetivos Específicos */
+.objetivos-especificos {
+    padding: 1.5rem;
+    background-color: #f0f7f9;
+    border-radius: 8px;
+    border-left: 5px solid #005f73;
+}
+
 .objetivos-especificos h3 {
-    text-align: left;
     color: #005f73;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .objetivos-especificos ul {
     list-style: none;
-    padding-left: 1.5rem;
+    padding-left: 0;
+    margin: 0;
 }
 
 .objetivos-especificos li {
     position: relative;
+    font-size: 1rem;
+    color: #333;
     margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    font-size: 0.95rem;
+    padding-left: 2rem;
 }
 
 .objetivos-especificos li::before {
     content: '✔️';
     position: absolute;
     left: 0;
-    color: #005f73;
+    color: #008080;
+    font-size: 1.2rem;
 }
+
+/* Efectos adicionales */
+#objetivos h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #005f73;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.objetivo-general:hover, .objetivos-especificos:hover {
+    background-color: #d7eef3;
+    transition: background-color 0.3s ease;
+}
+
+
 
 
 
